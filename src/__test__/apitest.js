@@ -1,6 +1,6 @@
 const request = require('supertest');
 const chai = require('chai');
-const api = require('../src/index.js');
+const api = require('../index.js');
 const dateNow = Date.now();
 expect = chai.expect;
 
