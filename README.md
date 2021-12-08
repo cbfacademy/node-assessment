@@ -10,15 +10,15 @@ Ensure your finished repository meets all of the [Assessment Criteria](#assessme
 
 ## Assessment Criteria
 
-1. The root currently serves the file `index.html`. The `index.html` file should outline the expected endpoints for the service.
+1. The root URL should serve/return the file `index.html`. The `index.html` file should outline the expected endpoints for the service.
 
 1. The `index.html` file should reference a `favicon.ico`, `logo.png` and a `styles.css` file.
 
 1. Add a `<title>` tag that includes your name e.g. Welcome to `Monica's` Todo List API
 
-1. Include the table of endpoints below in your homepage (index.html) as a description of what your API does.
+1. Include the table of endpoints below in your homepage (index.html) as a description of how to consume (use) your API.
 
-1. Add the functionality for all the endpoints described below:
+1. Add the functionality for all the endpoints described below to your API:
 
 | Method | URL | Description | Example URL | Request Body | Status Code | Response Body |
 |---|---|---|---|---|---|---|
@@ -77,17 +77,19 @@ fs.writeFile(__dirname + process.env.BASE_JSON_PATH,  content, err => {
 npm install
 ```
 
-3. Once you have completed the steps above. You can start the API with the following command:
+3. In the `index.js` file you will find some initial code. Read through, understand and uncomment the code to implement a basic static server with two endpoints.
+
+4. Once you have completed the steps above. You can start the API with the following command:
 
 ```
 npm start
 ```
 
-4. If configured correctly, when you visit the local URL: `http://localhost:8080/`, you will see the following page:
+5. If configured correctly, when you visit the local URL: `http://localhost:8080/`, you will see the following page:
 
 ![index.html API Homepage](node-assessment.png "Title")
 
-5. To complete the assessment make changes to the `index.js` file methods to return the expected data. Review the assessment criteria for detailed information on expected endpoints for your completed API.
+6. To complete the assessment make additions to the `index.js` file to return the expected data. Review the assessment criteria for detailed information on expected endpoints for your completed API.
 
 ## How to submit
 
