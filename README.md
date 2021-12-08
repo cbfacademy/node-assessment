@@ -16,6 +16,8 @@ Ensure your finished repository meets all of the [Assessment Criteria](#assessme
 
 1. Add a `<title>` tag that includes your name e.g. Welcome to `Monica's` Todo List API
 
+1. Include the table of endpoints below in your homepage (index.html) as a description of what your API does.
+
 1. Add the functionality for all the endpoints described below:
 
 | Method | URL | Description | Example URL | Request Body | Status Code | Response Body |
@@ -31,7 +33,7 @@ Ensure your finished repository meets all of the [Assessment Criteria](#assessme
 | `POST`* | `/todos/:id/undo` | Update todo, set attribute complete to `false` |`http://localhost:8080/todos/todos/01507581-9d12-4c3a-bb60-19d539a11189/undo` | | 200 (OK) or 400 (Bad Request) if invalid id | |
 | `DELETE`* | `todos/:id` | Deletes a todo by `id` |`http://localhost:8080/todos/01507581-9d12-4c3a-bb60-19d539a11189` | | 200 (OK) or 400 (Bad Request) if invalid id | |
 
-*_`POST`, `PUT`, `PATCH` and `DELETE` methods may need a API testing tool such as Postman to test._
+*_`POST`, `PUT`, `PATCH` and `DELETE` methods may need an API testing tool such as Postman to test._
 
 ## Expected structure of a Todo
 
