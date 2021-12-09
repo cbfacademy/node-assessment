@@ -16,7 +16,7 @@ Ensure your finished repository meets all of the [Assessment Criteria](#assessme
 
 1. Add a `<title>` tag that includes your name e.g. Welcome to `Monica's` Todo List API
 
-1. Include the table of endpoints below in your homepage (index.html) as a description of how to consume (use) your API.
+1. Include the table of endpoints below in your homepage (`index.html`) as a description of how to consume (use) your API.
 
 1. Add the functionality for all the endpoints described below to your API:
 
