@@ -35,7 +35,7 @@ Ensure your finished repository meets all of the [Assessment Criteria](#assessme
 
 *_`POST`, `PUT`, `PATCH` and `DELETE` methods may need an API testing tool such as Postman to test._
 
-## Expected structure of a Todo
+## Expected Structure of a Todo
 
 ```json
   {
@@ -49,11 +49,14 @@ Ensure your finished repository meets all of the [Assessment Criteria](#assessme
 
 ## Setup and Configuration
 
-1. Create a file called `.env` in your home directory (outside of the `src` folder). Add the following text:
+1. Clone this repository to your local machine. Once cloned, open in Visual Code.
+
+2. Create a file called `.env` in your home directory (outside of the `src` folder). Add the following text:
 
 ```
-BASE_JSON_PATH="\\models\\todos.json"
+BASE_JSON_PATH="/models/todos.json"
 ```
+
 This will ensure the current starter code is using the `todos.json` in the `models` folder.
 
 In your code when saving the updated list of todos back to the `todos.json` file, use the following environment variable:
@@ -71,25 +74,25 @@ fs.writeFile(__dirname + process.env.BASE_JSON_PATH,  content, err => {
 }
 ```
 
-2. Clone this repository to your local machine. Once cloned, open in Visual Code. Run the following commands to install any dependencies:
+3. Run the following commands to install any dependencies:
 
 ```
 npm install
 ```
 
-3. In the `index.js` file you will find some initial code. Read through, understand and uncomment the code to implement a basic static server with two endpoints.
+4. In the `index.js` file you will find some initial code. Read through, understand and uncomment the code to implement a basic static server with two endpoints.
 
-4. Once you have completed the steps above. You can start the API with the following command:
+1. Once you have completed the steps above. You can start the API with the following command:
 
 ```
 npm start
 ```
 
-5. If configured correctly, when you visit the local URL: `http://localhost:8080/`, you will see the following page:
+6. If configured correctly, when you visit the local URL: `http://localhost:8080/`, you will see the following page:
 
 ![index.html API Homepage](node-assessment.png "Title")
 
-6. To complete the assessment make additions to the `index.js` file to return the expected data. Review the assessment criteria for detailed information on expected endpoints for your completed API.
+7. To complete the assessment make additions to the `index.js` file to return the expected data. Review the assessment criteria for detailed information on expected endpoints for your completed API.
 
 ## How to submit
 
