@@ -43,7 +43,7 @@ after(async () => {
       console.error(err)
       return
     }
-    process.kill(process.pid);
+    process.exit(0);
   })
 });
 
