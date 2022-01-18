@@ -23,7 +23,7 @@
   "scripts": {
     "start": "nodemon src/index.js",
     "test": "env BASE_JSON_PATH='/__test__/test-todos.json' mocha 'src/__test__/apitest.js'"
-   },
+  },
   "devDependencies": {
     "chai": "^4.3.4",
     "mocha": "^9.1.3",

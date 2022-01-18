@@ -1,5 +1,6 @@
 require('dotenv').config();
 const fs = require('fs');
+const path = require('path');
 const request = require('supertest');
 const chai = require('chai');
 const api = require('../index.js');
@@ -37,11 +38,12 @@ after(async () => {
       "completed": false
     }
   ]`;
-  fs.writeFile(__dirname + "\\test-todos.json",  content, err => {
+  fs.writeFile(path.join(__dirname, '/test-todos.json'), JSON.stringify(JSON.parse(content), null, 2) + '\n', err => {
     if (err) {
       console.error(err)
       return
     }
+    process.kill(process.pid);
   })
 });
 
