@@ -10,6 +10,12 @@ const todoFilePath = process.env.BASE_JSON_PATH;
 // Read todos from todos.json into variable
 const getTodos = () => require(path.join(__dirname, todoFilePath));
 
+const invalidPathHandler = (request, response, next) => {
+  response.status(404);
+  response.send("Invalid path");
+};
+
+app.use(express.static(path.join(__dirname, "/public")));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.raw());
