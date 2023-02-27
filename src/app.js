@@ -14,12 +14,12 @@ app.use(bodyParser.json());
 
 app.use("/content", express.static(path.join(__dirname, "public")));
 
-app.get("/", (_, res) => {
+app.get("/", (req, res) => {
   // res.sendFile("./public/index.html", { root: __dirname });
   res.status(501).send("Not implemented"); // Remove me when you uncomment the above
 });
 
-app.get("/todos", (_, res) => {
+app.get("/todos", (req, res) => {
   // res.sendFile(todoFilePath, { root: __dirname });
   res.status(501).send("Not implemented"); // Remove me when you uncomment the above
 });
