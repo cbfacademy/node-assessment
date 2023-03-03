@@ -14,19 +14,14 @@ app.use(bodyParser.json());
 
 app.use("/content", express.static(path.join(__dirname, "public")));
 
-app.get("/", (_, res) => {
-  /*
-  res.sendFile("./public/index.html", { root: __dirname });
-  */
-  res.status(501).end();
+app.get("/", (req, res) => {
+  // res.sendFile("./public/index.html", { root: __dirname });
+  res.status(501).send("Not implemented"); // Remove me when you uncomment the above
 });
 
-app.get("/todos", (_, res) => {
-  /*
-  res.header("Content-Type","application/json");
-  res.sendFile(todoFilePath, { root: __dirname });
-  */
-  res.status(501).end();
+app.get("/todos", (req, res) => {
+  // res.sendFile(todoFilePath, { root: __dirname });
+  res.status(501).send("Not implemented"); // Remove me when you uncomment the above
 });
 
 //Add GET request with path '/todos/overdue'
